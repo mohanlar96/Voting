@@ -41,7 +41,7 @@ function ajaxRequestToValidateNStore(ajaxRequestURI, data) {
                     contestantId = server_response.contestant_id,
                     contestantName = server_response.contestant_name,
                     contestantType = server_response.contestant_type,
-                    url = ajaxRequestURI + '/ajaxDatabaseUpdateRequest/' + userId + '/' + contestantId;
+                    url = 'ajaxDatabaseUpdateRequest/' + userId + '/' + contestantId;
 
                 //if user confirm insert a new record in db
                 if(confirm('Are You Sure You Want To Vote For ' + contestantType.toUpperCase() + ": " + contestantName)) {
